@@ -1,0 +1,114 @@
+.App {
+  background: #ccc;
+}
+.App-row {
+  background: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+.Row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[className*="Col-"] {
+  float: left;
+  padding: 15px;
+}
+.Col-1 {
+  width: 8.33%;
+  float: left;
+  padding: 15px;
+}
+.Col-2 {
+  width: 16.66%;
+  float: left;
+  padding: 15px;
+}
+.Col-3 {
+  width: 25%;
+  float: left;
+  padding: 15px;
+}
+.Col-4 {
+  width: 33.33%;
+  float: left;
+  padding: 15px;
+}
+.Col-5 {
+  width: 41.66%;
+}
+.Col-6 {
+  width: 50%;
+  float: left;
+  padding: 15px;
+}
+.Col-7 {
+  width: 58.33%;
+}
+.Col-8 {
+  width: 66.66%;
+}
+.Col-9 {
+  width: 75%;
+}
+.Col-10 {
+  width: 83.33%;
+  float: left;
+  padding: 15px;
+}
+.Col-11 {
+  width: 91.66%;
+}
+.Col-12 {
+  width: 100%;
+}
+.Details-div {
+  background: #0c1842;
+  color: #fff;
+  padding: 30px;
+}
+.Flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Flex-element {
+  width: auto;
+}
+h4 {
+  margin-top: 5px;
+}
+input[type=text], 
+input[type=password], 
+input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+button {
+  background-color: #0c1842;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+button:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .Col-6 {
+    width: 100%;
+  }
+  .Col-2 {
+    width: 50%;
+  }
+}
